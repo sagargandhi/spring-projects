@@ -1,24 +1,43 @@
 package com.basic.di;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
-
 import java.math.BigDecimal;
 
-@Component
-@Getter
-@Setter
-@ToString
-@Slf4j
 public class Employee {
-    private String name = "Sagar";
-    private BigDecimal salary = BigDecimal.valueOf(1000000.00);
-    private Integer age = 37;
+    private String name;
+    private BigDecimal salary;
 
-    public void display(){
-        System.out.println("Displaying " + this.toString() );
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                '}';
+    }
+
+    private Integer age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public BigDecimal getSalary() {
+        return salary;
+    }
+
+    public void setSalary(BigDecimal salary) {
+        this.salary = salary;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

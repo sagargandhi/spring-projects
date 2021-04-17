@@ -15,7 +15,7 @@ public class SpringBootBasicDIApplication {
         Employee employee1 = new Employee();
         employee1.setAge(37);
         employee1.setName("Sagar");
-        employee1.setSalary(BigDecimal.valueOf(1000000));
+        employee1.setSalary(BigDecimal.valueOf(12212));
         return employee1;
     }
 
@@ -23,8 +23,8 @@ public class SpringBootBasicDIApplication {
     public Employee getEmployeeTwo() {
         Employee employee1 = new Employee();
         employee1.setAge(33);
-        employee1.setName("Swapna");
-        employee1.setSalary(BigDecimal.valueOf(2000000));
+        employee1.setName("ABC");
+        employee1.setSalary(BigDecimal.valueOf(13121));
         return employee1;
     }
 
